@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-surface: #10141a;
+    --color-surface-dim: #10141a;
+    --color-surface-bright: #353940;
+    --color-surface-lowest: #0a0e14;
+    --color-surface-low: #181c22;
+    --color-surface-mid: #1c2026;
+    --color-surface-high: #262a31;
+    --color-surface-highest: #31353c;
+    --color-on-surface: #dfe2eb;
+    --color-on-surface-variant: #bac9cc;
+    --color-outline: #849396;
+    --color-outline-variant: #3b494c;
+    --color-primary: #c3f5ff;
+    --color-primary-container: #00e5ff;
+    --color-primary-fixed-dim: #00daf3;
+    --color-secondary: #6cd3f7;
+    --color-secondary-container: #269dbe;
+  }
+
+  body {
+    background-color: #10141a;
+    color: #dfe2eb;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbar hiding utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glow effects */
+.glow-cyan-sm {
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.35);
+}
+.glow-cyan-md {
+  box-shadow: 0 0 24px rgba(0, 229, 255, 0.5);
+}
+.glow-cyan-lg {
+  box-shadow: 0 0 36px rgba(0, 229, 255, 0.65);
+}
+.glow-text {
+  text-shadow: 0 0 14px rgba(0, 229, 255, 0.55);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 26px rgba(0, 229, 255, 0.85);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}

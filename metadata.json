@@ -1,0 +1,6 @@
+{
+  "name": "KONANA - Obsidian Cyan Luxury",
+  "description": "Ultra-fast, end-to-end encrypted luxury mobile communication network and cloud vault featuring real-time chat, discovery, and high-fidelity media.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
